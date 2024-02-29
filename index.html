@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your website description goes here." />
+    <meta name="keywords" content="your, keywords, here" />
+    <meta name="author" content="Your Name" />
+
+    <!-- SEO-friendly title -->
+    <title>Your SEO-Friendly Title</title>
+
+    <!-- Favicon (replace 'favicon.ico' with your actual favicon file) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Kalnia:wght@100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Namdhinggo:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS stylesheets-->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css?v=1.0000000123" />
+    <link rel="stylesheet" href="css/header.css?v=1.0000000111" />
+    <link rel="stylesheet" href="css/colors.css" />
+    <link rel="stylesheet" href="css/footer.css?v=1.0000001" />
+
+    <!-- CSS stylesheets for page-->
+    <link rel="stylesheet" href="css/index.css?v=1.00000001" />
+
+    <!-- Canonical URL to avoid duplicate content issues -->
+    <link rel="canonical" href="https://www.yourwebsite.com" />
+
+    <!-- Open Graph meta tags for social sharing -->
+    <meta property="og:title" content="Your SEO-Friendly Title" />
+    <meta
+      property="og:description"
+      content="Your website description goes here."
+    />
+    <meta property="og:image" content="url_to_image" />
+    <meta property="og:url" content="https://www.yourwebsite.com" />
+
+    <!-- Twitter Card meta tags for Twitter sharing -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Your SEO-Friendly Title" />
+    <meta
+      name="twitter:description"
+      content="Your website description goes here."
+    />
+    <meta name="twitter:image" content="url_to_image" />
+  </head>
+
+  <body>
+    <header>
+      <div class="primary_green_background header_social">
+        <div class="left">
+          <span>
+            <img src="img/icons/phoneIcon.png" alt="phone icon" />(403)
+            123-4567</span
+          >
+          <span
+            ><a href="mailto:info@calgarypalestiniancouncil.ca" target="_blank">
+              <img
+                src="img/icons/emailIcon.png"
+                alt="email icon"
+              />info@calgarypalestiniancouncil.ca</a
+            ></span
+          >
+        </div>
+        <div class="right">
+          <a
+            href="https://www.facebook.com/CalgaryPalestinianCouncil/"
+            target="_blank"
+            title="visit our facebook page"
+          >
+            <img src="img/icons/facebookIcon.png" alt="facebook icon"
+          /></a>
+          <a
+            href="https://www.instagram.com/CalgaryPalestinianCouncil/"
+            target="_blank"
+            title="visit our instragram page"
+            ><img src="img/icons/instagramIcon.png" alt="instragram icon"
+          /></a>
+          <a
+            href="https://www.youtube.com/@CalgaryPalestinianCouncil"
+            target="_blank"
+            title="visit our youtube channel"
+            ><img src="img/icons/youtubeIcon.png" alt="youtube icon"
+          /></a>
+        </div>
+      </div>
+      <div class="header_links">
+        <img src="img/cpcLogo.png" class="header_logo" />
+        <nav>
+          <ul class="nav_ul_container">
+            <a href="index.html" class="main_link">Home</a>
+            <li
+              class="li_with_dropdown"
+              onmouseover="showDropdown(this)"
+              onmouseout="hideDropdown(this)"
+            >
+              <a href="#about_us" class="main_link">About Us</a>
+              <ul class="dropdown">
+                <a href="whoWeAre.html">Who We Are</a>
+                <a href="boardCommittees.html">Board & Committees</a>
+                <a href="membership.html">Membership</a>
+              </ul>
+            </li>
+            <li
+              class="li_with_dropdown"
+              onmouseover="showDropdown(this)"
+              onmouseout="hideDropdown(this)"
+            >
+              <a href="events.html" class="main_link">News & Events </a>
+              <ul class="dropdown">
+                <a href="news.html">News</a>
+                <a href="events.html">Events</a>
+              </ul>
+            </li>
+
+            <a href="#contact_us" class="main_link">Volunteer With Us</a>
+
+            <a href="#contact_us" class="main_link">Contact Us</a>
+
+            <a href="dontate.html" class="main_link primary_nav_button"
+              >Donate</a
+            >
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main">
+      <span class="overlayDarker"></span>
+      <div class="call_to_action_container">
+        <h1 class="call_to_action_title">
+          Be <span class="the">the</span>
+          <strong class="primary_green_color">Change</strong>
+        </h1>
+        <h3 class="call_to_action_slogan">
+          Unity for <strong class="primary_red_color">Justice</strong>, Strength
+          for <strong class="primary_green_color">Palestine</strong>
+        </h3>
+        <a href="" class="call_to_action_button primary_button">Our Cause</a>
+      </div>
+    </main>
+    <div class="our_objectives">
+      <div class="section1">
+        <div class="card">
+          <img src="img/oliveTreeBackground.png" />
+          <h1>Community Empowerment</h1>
+          <p>
+            Strengthen and empower the Palestinian community in Calgary by
+            providing support, resources, and opportunities for education and
+            cultural preservation.
+          </p>
+          <a href="" class="primary_button">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="img/oliveTreeBackground.png" />
+          <h1>Advocacy and Lobbying</h1>
+          <p>
+            Act as a prominent voice for Palestinian rights in Canada, engaging
+            in political lobbying and advocacy efforts at local, provincial, and
+            federal levels.
+          </p>
+          <a href="" class="primary_button">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="img/oliveTreeBackground.png" />
+          <h1>Outreach and Education</h1>
+          <p>
+            Raise awareness about the Palestinian cause, culture, and history
+            through educational programs, events, and outreach activities within
+            Calgary and beyond.
+          </p>
+          <a href="" class="primary_button">Learn More</a>
+        </div>
+      </div>
+      <div class="section2">
+        <div class="card">
+          <img src="img/oliveTreeBackground.png" />
+          <h1>Humanitarian Initiatives</h1>
+          <p>
+            Support humanitarian efforts that benefit Palestinians, both locally
+            and internationally, fostering a sense of global responsibility.
+          </p>
+          <a href="" class="primary_button">Learn More</a>
+        </div>
+        <div class="card">
+          <img src="img/oliveTreeBackground.png" />
+          <h1>Collaboration and Alliances</h1>
+          <p>
+            Build partnerships with like-minded organizations, community groups,
+            and individuals to create a network for shared goals and collective
+            impact.
+          </p>
+          <a class="primary_button">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <div class="chairman_message">
+      <div class="left">
+        <h1>Chairman's Message</h1>
+        <p>
+          Greetings to the Calgary Palestinian Council community and our
+          supporters across Canada. Our journey is one of resilience, advocacy,
+          and unity. In a spirit of collaboration, we aim to strengthen our
+          community, amplify the Palestinian voice, and contribute to a just
+          resolution of the longstanding Palestinian suffering. Together, let us
+          build bridges of understanding, work towards positive change, and
+          create a brighter future for the Palestinian people. Thank you for
+          joining us on this important mission.
+        </p>
+        <a href="" class="primary_button">Learn More</a>
+      </div>
+
+      <div class="right">
+        <img src="img/oliveTreeBackground.png" alt="" class="imgMain" />
+        <img
+          src="img/oliveTreeBackground.png"
+          alt=""
+          class="imgSecondaryRight"
+        />
+        <img
+          src="img/oliveTreeBackground.png"
+          alt=""
+          class="imgSecondaryLeft"
+        />
+      </div>
+    </div>
+    <div id="about_us" class="about_misson_vision">
+      <div class="about_us">
+        <h1>United for Change, Together As a Community</h1>
+        <p>
+          There are many ways you can help support our work. You can make a
+          financial contribution, volunteer your time, or donate goods or
+          services. Every little bit helps and we are grateful for your support!
+        </p>
+        <a href="" class="primary_button">About Us</a>
+      </div>
+      <div class="our_misson">
+        <img src="img/icons/missionIcon.png" class="icon" />
+        <h2>Our Mission</h2>
+        <p>
+          The Calgary Palestinian Council (CPC) is dedicated to being a leading
+          social, political, and lobbying organization in Calagry, committed to
+          promoting the rights, heritage, and well-being of the Palestinian
+          people. Through outreach, education, and advocacy, we strive to build
+          bridges of understanding and solidarity while working towards a just
+          and peaceful resolution of the Palestinian-Israeli conflict.
+        </p>
+      </div>
+      <div class="our_vision">
+        <img src="img/icons/visionIcon.png" class="icon" />
+        <h2>Our Vission</h2>
+        <p>
+          Empowering the Palestinian community in Calgary and fostering
+          understanding, respect, and support for the Palestinian cause
+          throughout Canada.
+        </p>
+      </div>
+    </div>
+
+    <div id="contact_us" class="contact_container">
+      <div class="contact_card">
+        <h1>Get in touch with us</h1>
+        <div class="row">
+          <form class="left column">
+            <input type="text" placeholder="Your Name *" required />
+            <input type="email" placeholder="Your Email *" required />
+            <input type="tel" placeholder="Your Number (optional)" />
+            <textarea placeholder="Message"></textarea>
+            <button class="primary_button">Send</button>
+          </form>
+          <div class="right column">
+            <a
+              ><img src="img/icons/phoneOutline.png" class="icon" />(403)
+              123-4567</a
+            >
+            <a
+              ><img src="img/icons/emailOutline.png" class="icon" />(403)
+              123-4567</a
+            >
+            <div class="social">
+              <a href="" target="_blank" class=""
+                ><img src="img/icons/facebookOutline.svg" /></a
+              ><a href="" target="_blank"
+                ><img src="img/icons/instagramOutline.svg" /></a
+              ><a href="" target="_blank"
+                ><img src="img/icons/youtubeOutline.svg"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <span class="overlayDark"></span>
+      <div class="footer_card">
+        <div class="rows">
+          <div class="left">
+            <a href="about.html" class="h2">About Us</a>
+            <a href="index.html">Home</a>
+            <a href="whoWeAre.html"> Who We Are</a>
+            <a href="boardCommittees.html"> Board & Committees</a>
+            <a href="membership.html">Membership</a>
+          </div>
+          <div class="middle">
+            <h2>Contact Info</h2>
+            <a href="">
+              <img class="icon" src="img/icons/buildingIcon.png" />Grand opening
+              soon!
+            </a>
+            <a href="">
+              <img class="icon" src="img/icons/phoneIcon.png" />(403) 123-4567
+            </a>
+            <a href="mailto:info@calgarypalestiniancouncil.ca">
+              <img class="icon" src="img/icons/emailIcon.png" />
+              info@calgarypalestiniancouncil.ca
+            </a>
+          </div>
+          <div class="right">
+            <h2>We need your help</h2>
+            <p>
+              By volunteering your time and efforts, you can make a difference
+              in your community.
+            </p>
+            <a href="" class="primary_button">Volunteer With Us</a>
+          </div>
+        </div>
+
+        <hr />
+        <div class="bottom">
+          <div class="rows">
+            <h2>Calgary Palestinian Council (CPC)</h2>
+            <span
+              >© 2024 Calgary Palestinian Council (CPC) · All rights
+              reserved</span
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+      function showDropdown(liElement) {
+        // Get the direct child .dropdown element of the hovered .li_with_dropdown
+        var dropdown = liElement.querySelector(".dropdown");
+        dropdown.style.display = "block";
+      }
+
+      function hideDropdown(liElement) {
+        // Get the direct child .dropdown element of the hovered .li_with_dropdown
+        var dropdown = liElement.querySelector(".dropdown");
+        dropdown.style.display = "none";
+      }
+    </script>
+    <script>
+      const header = document.querySelector(".header_links");
+      let lastScroll = 0;
+
+      window.addEventListener("scroll", () => {
+        const currentScroll = window.scrollY;
+
+        if (currentScroll > 500 && currentScroll > lastScroll) {
+          // Scroll down and past 500px, reduce header height to 50px
+          header.style.height = "50px";
+        } else {
+          // Scroll up or not past 500px, restore header height to 100px
+          header.style.height = "100px";
+        }
+
+        lastScroll = currentScroll;
+      });
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
