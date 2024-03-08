@@ -1,22 +1,28 @@
 /*  desktop  */
 @media (min-width: 768px) {
+  .mobile {
+    display: none !important;
+  }
   header {
+    width: 100vw;
     position: fixed;
     top: 0px;
+    left: 0px;
+    right: 0;
     z-index: 10;
     box-shadow: 0 4px 4px -2px rgb(0, 0, 0, 0.5);
   }
   .header_social {
     width: 100vw;
     height: 40px;
-    padding: 0px 20%;
+    padding: 0px 5%;
+    margin: 0px;
     color: white;
     display: flex;
-    justify-content: space-between;
     box-sizing: border-box;
   }
   .header_social .left {
-    width: 70%;
+    width: 80%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -34,7 +40,7 @@
     margin-right: 10px;
   }
   .header_social .right {
-    width: 30%;
+    width: 20%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -49,15 +55,17 @@
   }
 
   .header_links {
-    height: 100px;
+    /* height: 100px; */
     padding: 10px 200px;
     display: flex;
     justify-content: space-between;
     background-color: white;
     transition: 2.5s;
+    overflow-y: visible;
   }
   .header_logo {
     height: 100%;
+    max-height: 100px;
   }
   nav {
     width: auto;
@@ -67,7 +75,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    height: 100%;
+    min-height: 100%;
     padding: 0;
     margin: 0;
   }
@@ -146,6 +154,9 @@
 }
 /*  mobile  */
 @media (max-width: 768px) {
+  .desktop {
+    display: none !important;
+  }
   header {
     position: fixed;
     top: 0px;
@@ -159,6 +170,10 @@
     box-sizing: border-box;
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 4px 4px -2px rgba(255, 255, 255, 0.25);
   }
   .header_social .left {
     display: none;
@@ -166,40 +181,131 @@
 
   .header_social .right {
     width: 50%;
+    height: 40px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
   }
   .header_social .right a {
     padding: 5px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .header_social .right a img {
     height: 22.5px;
   }
 
   .header_links {
+    width: 100vw;
     height: 80px;
     padding: 10px 10px;
     display: flex;
     justify-content: center;
     background-color: white;
     transition: 2.5s;
+    box-sizing: border-box;
+    position: relative;
   }
   .header_logo {
     height: 100%;
   }
   nav {
     width: auto;
-    display: none;
   }
   nav .nav_ul_container {
-    width: 100%;
+    width: 100px;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 100%;
     padding: 0;
     margin: 0;
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+  .toggle-menu {
+    display: block;
+    position: relative;
+    padding: 1.5rem;
+    width: 20%;
+    height: 80px;
+    text-indent: -999em;
+    cursor: pointer;
+    z-index: 10;
+    box-sizing: border-box;
+  }
+
+  .toggle-menu--clicked {
+    .menu__bar {
+      &:nth-child(1) {
+        top: 2.25rem;
+        transform: rotate(45deg);
+      }
+
+      &:nth-child(2) {
+        transform: translateX(100%) scale(0);
+      }
+
+      &:nth-child(3) {
+        top: 2.25rem;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .menu__bar {
+    display: block;
+    position: absolute;
+    left: 1rem;
+    width: 2.5rem;
+    height: 0.25rem;
+    transition: top 0.4s ease-out, transform 0.4s ease-out;
+    background-color: #000000;
+
+    &:nth-child(1) {
+      top: 1.25;
+    }
+
+    &:nth-child(2) {
+      top: 2.25rem;
+    }
+
+    &:nth-child(3) {
+      top: 3rem;
+    }
+  }
+
+  .mobileDropDown {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #009351;
+    color: white;
+    padding: 50px;
+    height: calc(100vh - 90px);
+    position: fixed;
+    top: 90px;
+    left: 0px;
+    right: 0px;
+    width: 100vw;
+    z-index: 1;
+    transition: 0.5s;
+    top: -1000px;
+    padding-top: 130px;
+  }
+
+  .mobileDropDown a {
+    width: 50%;
+    margin: 2.5px 0px;
+    padding: 15px;
+    font-size: 1.1rem;
+  }
+
+  .mobileDropDown ul {
+    display: flex;
+    flex-direction: column;
   }
 
   nav ul .main_link {

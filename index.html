@@ -3,15 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Your website description goes here." />
-    <meta name="keywords" content="your, keywords, here" />
-    <meta name="author" content="Your Name" />
+    <meta
+      name="description"
+      content="Calgary Palestinian Council (CPC) advocates for Palestinian rights, heritage, and well-being in Calgary. We foster understanding, solidarity, and work towards a just resolution of the Palestinian-Israeli conflict through outreach, education, and advocacy."
+    />
+    <meta
+      name="keywords"
+      content="Calagry Palestinian Council, CPC, Calgary, Palestine, Gaza, Human Rights"
+    />
+    <meta name="author" content="Calagry Palestinian Council (CPC)" />
 
-    <!-- SEO-friendly title -->
-    <title>Your SEO-Friendly Title</title>
+    <!-- Title -->
+    <title>Calgary Palestinian Council (CPC)</title>
 
-    <!-- Favicon (replace 'favicon.ico' with your actual favicon file) -->
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Favicon -->
+    <link rel="icon" href="img/palestineFlag.ico" type="image/x-icon" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -39,34 +45,34 @@
 
     <!-- CSS stylesheets-->
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/main.css?v=1.0000000123" />
-    <link rel="stylesheet" href="css/header.css?v=1.0000000111" />
+    <link rel="stylesheet" href="css/main.css?v=1.00000001234" />
+    <link rel="stylesheet" href="css/header.css?v=1.0000000111234" />
     <link rel="stylesheet" href="css/colors.css" />
     <link rel="stylesheet" href="css/footer.css?v=1.0000001" />
 
     <!-- CSS stylesheets for page-->
-    <link rel="stylesheet" href="css/index.css?v=1.00000001" />
+    <link rel="stylesheet" href="css/index.css?v=1.000000011" />
 
     <!-- Canonical URL to avoid duplicate content issues -->
-    <link rel="canonical" href="https://www.yourwebsite.com" />
+    <link rel="canonical" href="https://calgarypalestiniancouncil.ca/" />
 
     <!-- Open Graph meta tags for social sharing -->
-    <meta property="og:title" content="CPC - Calgary Palestinian Council" />
+    <meta property="og:title" content="Calgary Palestinian Council (CPC)" />
     <meta
       property="og:description"
-      content="Your website description goes here."
+      content="Calgary Palestinian Council (CPC) advocates for Palestinian rights, heritage, and well-being in Calgary. We foster understanding, solidarity, and work towards a just resolution of the Palestinian-Israeli conflict through outreach, education, and advocacy."
     />
-    <meta property="og:image" content="url_to_image" />
-    <meta property="og:url" content="https://www.yourwebsite.com" />
+    <meta property="og:image" content="img/cpcLogoWhiteBackground.jpg" />
+    <meta property="og:url" content="https://calgarypalestiniancouncil.ca/" />
 
     <!-- Twitter Card meta tags for Twitter sharing -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Your SEO-Friendly Title" />
+    <meta name="twitter:title" content="Calgary Palestinian Council (CPC)" />
     <meta
       name="twitter:description"
-      content="Your website description goes here."
+      content="Calgary Palestinian Council (CPC) advocates for Palestinian rights, heritage, and well-being in Calgary. We foster understanding, solidarity, and work towards a just resolution of the Palestinian-Israeli conflict through outreach, education, and advocacy."
     />
-    <meta name="twitter:image" content="url_to_image" />
+    <meta name="twitter:image" content="img/cpcLogoWhiteBackground.jpg" />
   </head>
 
   <body>
@@ -74,8 +80,8 @@
       <div class="primary_green_background header_social">
         <div class="left">
           <span>
-            <img src="img/icons/phoneIcon.png" alt="phone icon" />(403)
-            123-4567</span
+            <img src="img/icons/phoneIcon.png" alt="phone icon" />(587)
+            848-8607</span
           >
           <span
             ><a href="mailto:info@calgarypalestiniancouncil.ca" target="_blank">
@@ -111,7 +117,7 @@
       <div class="header_links">
         <img src="img/cpcLogo.png" class="header_logo" />
         <nav>
-          <ul class="nav_ul_container">
+          <ul class="desktop nav_ul_container">
             <a href="index.html" class="main_link">Home</a>
             <li
               class="li_with_dropdown"
@@ -120,13 +126,19 @@
             >
               <a href="#about_us" class="main_link">About Us</a>
               <ul class="dropdown">
-                <a href="whoWeAre.html">Who We Are</a>
-                <a href="boardCommittees.html">Board & Committees</a>
-                <a href="membership.html">Membership</a>
+                <a href="#our_mission">Our Mission</a>
+                <a href="#our_vision">Our Vision</a>
+                <a href="#our_objectives">Our Objectives</a>
+                <a href="#chairmans_message">Chairman's Message</a>
+                <a href="whoWeAre.html" class="hide">Who We Are</a>
+                <a href="boardCommittees.html" class="hide"
+                  >Board & Committees</a
+                >
+                <a href="membership.html" class="hide">Membership</a>
               </ul>
             </li>
             <li
-              class="li_with_dropdown"
+              class="hide li_with_dropdown"
               onmouseover="showDropdown(this)"
               onmouseout="hideDropdown(this)"
             >
@@ -141,10 +153,41 @@
 
             <a href="#contact_us" class="main_link">Contact Us</a>
 
-            <a href="dontate.html" class="main_link primary_nav_button"
+            <a href="dontate.html" class="hide main_link primary_nav_button"
               >Donate</a
             >
           </ul>
+          <ul class="mobile nav_ul_container">
+            <div class="toggle-menu" data-toggle-menu>
+              <span class="menu__bar"></span>
+              <span class="menu__bar"></span>
+              <span class="menu__bar"></span>
+            </div>
+          </ul>
+          <div id="mobileDropdown" class="mobile mobileDropDown">
+            <a href="index.html">HOME</a>
+            <a href="#about_us" class="">About Us</a>
+            <ul>
+              <a href="#our_mission">Our Mission</a>
+              <a href="#our_vision">Our Vision</a>
+              <a href="#our_objectives">Our Objectives</a>
+              <a href="#chairmans_message">Chairman's Message</a>
+              <a href="whoWeAre.html" class="hide">Who We Are</a>
+              <a href="boardCommittees.html" class="hide">Board & Committees</a>
+              <a href="membership.html" class="hide">Membership</a>
+            </ul>
+            <a href="events.html" class="hide">News & Events </a>
+            <ul class="hide">
+              <a href="news.html">News</a>
+              <a href="events.html">Events</a>
+            </ul>
+
+            <a href="#contact_us" class="">Volunteer With Us</a>
+
+            <a href="#contact_us" class="">Contact Us</a>
+
+            <a href="dontate.html" class="hide">Donate</a>
+          </div>
         </nav>
       </div>
     </header>
@@ -159,65 +202,100 @@
           Unity for <strong class="primary_red_color">Justice</strong>, Strength
           for <strong class="primary_green_color">Palestine</strong>
         </h3>
-        <a href="" class="call_to_action_button primary_button">Our Cause</a>
+        <a href="#about_us" class="call_to_action_button primary_button"
+          >Our Cause</a
+        >
       </div>
     </main>
-    <div class="our_objectives">
+    <!-- section 2  -->
+    <div id="about_us" class="about_mission_vision">
+      <div class="about_us">
+        <h1>United for Change, Together As a Community</h1>
+        <p>
+          There are many ways you can help support our work. You can make a
+          financial contribution, volunteer your time, or donate goods or
+          services. Every little bit helps and we are grateful for your support!
+        </p>
+        <a href="" class="hide primary_button">About Us</a>
+      </div>
+      <div id="our_mission" class="our_mission">
+        <img src="img/icons/missionIcon.png" class="icon" />
+        <h2>Our Mission</h2>
+        <p>
+          The Calgary Palestinian Council (CPC) is dedicated to being a leading
+          social, political, and lobbying organization in Calagry, committed to
+          promoting the rights, heritage, and well-being of the Palestinian
+          people. Through outreach, education, and advocacy, we strive to build
+          bridges of understanding and solidarity while working towards a just
+          and peaceful resolution of the Palestinian-Israeli conflict.
+        </p>
+      </div>
+      <div id="our_vision" class="our_vision">
+        <img src="img/icons/visionIcon.png" class="icon" />
+        <h2>Our Vision</h2>
+        <p>
+          Empowering the Palestinian community in Calgary and fostering
+          understanding, respect, and support for the Palestinian cause
+          throughout Canada.
+        </p>
+      </div>
+    </div>
+    <div id="our_objectives" class="our_objectives">
       <div class="section1">
         <div class="card">
-          <img src="img/oliveTreeBackground.png" />
+          <img src="img/Community_Empowerment.png" />
           <h1>Community Empowerment</h1>
           <p>
             Strengthen and empower the Palestinian community in Calgary by
             providing support, resources, and opportunities for education and
             cultural preservation.
           </p>
-          <a href="" class="primary_button">Learn More</a>
+          <a href="" class="hide primary_button">Learn More</a>
         </div>
         <div class="card">
-          <img src="img/oliveTreeBackground.png" />
+          <img src="img/Advocacy_and_Lobbying.png" />
           <h1>Advocacy and Lobbying</h1>
           <p>
             Act as a prominent voice for Palestinian rights in Canada, engaging
             in political lobbying and advocacy efforts at local, provincial, and
             federal levels.
           </p>
-          <a href="" class="primary_button">Learn More</a>
+          <a href="" class="hide primary_button">Learn More</a>
         </div>
         <div class="card">
-          <img src="img/oliveTreeBackground.png" />
+          <img src="img/Outreach_and_Education.png" />
           <h1>Outreach and Education</h1>
           <p>
             Raise awareness about the Palestinian cause, culture, and history
             through educational programs, events, and outreach activities within
             Calgary and beyond.
           </p>
-          <a href="" class="primary_button">Learn More</a>
+          <a href="" class="hide primary_button">Learn More</a>
         </div>
       </div>
       <div class="section2">
         <div class="card">
-          <img src="img/oliveTreeBackground.png" />
+          <img src="img/Humanitarian_Initiatives.png" />
           <h1>Humanitarian Initiatives</h1>
           <p>
             Support humanitarian efforts that benefit Palestinians, both locally
             and internationally, fostering a sense of global responsibility.
           </p>
-          <a href="" class="primary_button">Learn More</a>
+          <a href="" class="hide primary_button">Learn More</a>
         </div>
         <div class="card">
-          <img src="img/oliveTreeBackground.png" />
+          <img src="img/Collaboration_and_Alliances.png" />
           <h1>Collaboration and Alliances</h1>
           <p>
             Build partnerships with like-minded organizations, community groups,
             and individuals to create a network for shared goals and collective
             impact.
           </p>
-          <a class="primary_button">Learn More</a>
+          <a href="" class="hide primary_button">Learn More</a>
         </div>
       </div>
     </div>
-    <div class="chairman_message">
+    <div id="chairmans_message" class="chairman_message">
       <div class="left">
         <h1>Chairman's Message</h1>
         <p>
@@ -230,53 +308,21 @@
           create a brighter future for the Palestinian people. Thank you for
           joining us on this important mission.
         </p>
-        <a href="" class="primary_button">Learn More</a>
+        <a href="" class="hide primary_button">Learn More</a>
       </div>
 
       <div class="right">
-        <img src="img/oliveTreeBackground.png" alt="" class="imgMain" />
+        <img src="img/Chairman_Message.png" alt="" class="imgMain" />
         <img
           src="img/oliveTreeBackground.png"
           alt=""
-          class="imgSecondaryRight"
+          class="hide imgSecondaryRight"
         />
         <img
           src="img/oliveTreeBackground.png"
           alt=""
-          class="imgSecondaryLeft"
+          class="hide imgSecondaryLeft"
         />
-      </div>
-    </div>
-    <div id="about_us" class="about_misson_vision">
-      <div class="about_us">
-        <h1>United for Change, Together As a Community</h1>
-        <p>
-          There are many ways you can help support our work. You can make a
-          financial contribution, volunteer your time, or donate goods or
-          services. Every little bit helps and we are grateful for your support!
-        </p>
-        <a href="" class="primary_button">About Us</a>
-      </div>
-      <div class="our_misson">
-        <img src="img/icons/missionIcon.png" class="icon" />
-        <h2>Our Mission</h2>
-        <p>
-          The Calgary Palestinian Council (CPC) is dedicated to being a leading
-          social, political, and lobbying organization in Calagry, committed to
-          promoting the rights, heritage, and well-being of the Palestinian
-          people. Through outreach, education, and advocacy, we strive to build
-          bridges of understanding and solidarity while working towards a just
-          and peaceful resolution of the Palestinian-Israeli conflict.
-        </p>
-      </div>
-      <div class="our_vision">
-        <img src="img/icons/visionIcon.png" class="icon" />
-        <h2>Our Vission</h2>
-        <p>
-          Empowering the Palestinian community in Calgary and fostering
-          understanding, respect, and support for the Palestinian cause
-          throughout Canada.
-        </p>
       </div>
     </div>
 
@@ -284,22 +330,33 @@
       <div class="contact_card">
         <h1>Get in touch with us</h1>
         <div class="row">
-          <form class="left column">
-            <input type="text" placeholder="Your Name *" required />
-            <input type="email" placeholder="Your Email *" required />
-            <input type="tel" placeholder="Your Number (optional)" />
-            <textarea placeholder="Message"></textarea>
-            <button class="primary_button">Send</button>
+          <form id="form" class="hide left column">
+            <input type="text" name="name" placeholder="Your Name *" required />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email *"
+              required
+            />
+            <input
+              type="tel"
+              name="number"
+              placeholder="Your Number (optional)"
+            />
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="button" onclick="submitForm()" class="primary_button">
+              Send
+            </button>
           </form>
           <div class="right column">
             <a
-              ><img src="img/icons/phoneOutline.png" class="icon" />(403)
-              123-4567</a
+              ><img src="img/icons/phoneOutline.png" class="icon" />(587)
+              848-8607</a
             >
-            <a
-              ><img src="img/icons/emailOutline.png" class="icon" />(403)
-              123-4567</a
-            >
+            <a href="mailto:info@calgarypalestiniancouncil.ca"
+              ><img src="img/icons/emailOutline.png" class="icon" />
+              info@calgarypalestiniancouncil.ca
+            </a>
             <div class="social">
               <a href="" target="_blank" class=""
                 ><img src="img/icons/facebookOutline.svg" /></a
@@ -320,9 +377,13 @@
           <div class="left">
             <a href="about.html" class="h2">About Us</a>
             <a href="index.html">Home</a>
-            <a href="whoWeAre.html"> Who We Are</a>
-            <a href="boardCommittees.html"> Board & Committees</a>
-            <a href="membership.html">Membership</a>
+            <a href="#our_mission">Our Mission</a>
+            <a href="#our_vision">Our Vision</a>
+            <a href="#our_objectives">Our Objectives</a>
+            <a href="#chairmans_message">Chairman's Message</a>
+            <a href="whoWeAre.html" class="hide"> Who We Are</a>
+            <a href="boardCommittees.html" class="hide"> Board & Committees</a>
+            <a href="membership.html" class="hide">Membership</a>
           </div>
           <div class="middle">
             <h2>Contact Info</h2>
@@ -331,7 +392,7 @@
               soon!
             </a>
             <a href="">
-              <img class="icon" src="img/icons/phoneIcon.png" />(403) 123-4567
+              <img class="icon" src="img/icons/phoneIcon.png" />(587) 848-8607
             </a>
             <a href="mailto:info@calgarypalestiniancouncil.ca">
               <img class="icon" src="img/icons/emailIcon.png" />
@@ -344,7 +405,7 @@
               By volunteering your time and efforts, you can make a difference
               in your community.
             </p>
-            <a href="" class="primary_button">Volunteer With Us</a>
+            <a href="#contact_us" class="primary_button">Volunteer With Us</a>
           </div>
         </div>
 
@@ -353,14 +414,13 @@
           <div class="rows">
             <h2>Calgary Palestinian Council (CPC)</h2>
             <span
-              >© 2024 Calgary Palestinian Council (CPC) · All rights
+              >&copy; 2024 Calgary Palestinian Council (CPC) &middot; All rights
               reserved</span
             >
           </div>
         </div>
       </div>
     </footer>
-    <script src="script.js"></script>
     <script>
       function showDropdown(liElement) {
         // Get the direct child .dropdown element of the hovered .li_with_dropdown
@@ -373,8 +433,7 @@
         var dropdown = liElement.querySelector(".dropdown");
         dropdown.style.display = "none";
       }
-    </script>
-    <script>
+
       const header = document.querySelector(".header_links");
       let lastScroll = 0;
 
@@ -391,13 +450,53 @@
 
         lastScroll = currentScroll;
       });
+
+      // Smooth scrolling for anchor links with an offset
       document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
 
-          document.querySelector(this.getAttribute("href")).scrollIntoView({
-            behavior: "smooth",
-          });
+          const targetId = this.getAttribute("href").substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 150,
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+    </script>
+    <script>
+      let savedScrollY = 0;
+      // Function to save the current scroll position
+      function saveScrollPosition() {
+        savedScrollY = window.scrollY;
+      }
+
+      // Function to restore the saved scroll position
+      function restoreScrollPosition() {
+        window.scrollTo(0, savedScrollY);
+      }
+      var link = document.querySelector("[data-toggle-menu]");
+      var dropDown = document.querySelector(".mobileDropDown");
+      link.addEventListener("click", function () {
+        if (link.classList.contains("toggle-menu--clicked")) {
+          link.classList.remove("toggle-menu--clicked");
+          dropDown.style.top = "-1000px";
+          restoreScrollPosition();
+        } else {
+          link.classList.add("toggle-menu--clicked");
+          dropDown.style.top = "0";
+          saveScrollPosition();
+        }
+      });
+      var mobileLinks = document.querySelectorAll("#mobileDropdown a");
+      mobileLinks.forEach((mobileLink) => {
+        mobileLink.addEventListener("click", function () {
+          link.classList.remove("toggle-menu--clicked");
+          dropDown.style.top = "-1000px";
         });
       });
     </script>
