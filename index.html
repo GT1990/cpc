@@ -51,7 +51,7 @@
     <link rel="stylesheet" href="css/footer.css?v=1.0000001" />
 
     <!-- CSS stylesheets for page-->
-    <link rel="stylesheet" href="css/index.css?v=1.000000011" />
+    <link rel="stylesheet" href="css/index.css?v=1.0000000111" />
 
     <!-- Canonical URL to avoid duplicate content issues -->
     <link rel="canonical" href="https://calgarypalestiniancouncil.ca/" />
@@ -330,7 +330,12 @@
       <div class="contact_card">
         <h1>Get in touch with us</h1>
         <div class="row">
-          <form id="form" class="hide left column">
+          <form
+            id="form"
+            action="/php/sendContactUsForm.php"
+            method="post"
+            class="left column"
+          >
             <input type="text" name="name" placeholder="Your Name *" required />
             <input
               type="email"
@@ -340,13 +345,15 @@
             />
             <input
               type="tel"
-              name="number"
+              name="phone"
               placeholder="Your Number (optional)"
             />
-            <textarea name="message" placeholder="Message"></textarea>
-            <button type="button" onclick="submitForm()" class="primary_button">
-              Send
-            </button>
+            <textarea
+              name="message"
+              placeholder="Message (max 250 characters)"
+              maxlength="250"
+            ></textarea>
+            <button type="submit" class="primary_button">Send</button>
           </form>
           <div class="right column">
             <a
@@ -499,6 +506,27 @@
           dropDown.style.top = "-1000px";
         });
       });
+    </script>
+    <script>
+      // Check if the URL contains a success or error status
+      const urlParams = new URLSearchParams(window.location.search);
+      const status = urlParams.get("status");
+
+      // Function to update the content based on the status
+      const updateContent = () => {
+        const messageContainer = document.getElementById("form");
+
+        if (status === "success") {
+          messageContainer.innerHTML =
+            '<div class="form-submit-container success"><img src="/img/icons/sentIcon.svg" /><p>Thank you for reaching out! We will get back to you as soon as possible.</p></div>';
+        } else if (status === "error") {
+          messageContainer.innerHTML =
+            '<div class="form-submit-container  error"><img src="/img/icons/errorIcon.svg" /><p>There was an error submitting your message. Please reach out to us directly at <a href="mailto:info@calgarypalestiniancouncil.ca" target="_blank" >info@calgarypalestiniancouncil.ca</a></p></div>';
+        }
+      };
+
+      // Call the function on page load
+      updateContent();
     </script>
   </body>
 </html>

@@ -345,6 +345,30 @@
     padding: 50px;
     flex-grow: 1;
   }
+  .contact_card .left .form-submit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_card .left .form-submit-container p {
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+  }
+  .contact_card .left .form-submit-container img {
+    width: 70px;
+    margin-bottom: 25px;
+  }
+  .contact_card .left .success {
+    color: #009351;
+  }
+  .contact_card .left .error {
+    color: #d22529;
+  }
+  .contact_card .left .form-submit-container a {
+    color: rgb(80, 80, 80);
+  }
   .contact_card .left input {
     height: 25px;
     background-color: #f8f5ef;
@@ -454,6 +478,30 @@
     align-items: center;
     padding: 50px;
     width: 100%;
+  }
+  .contact_card .left .form-submit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_card .left .form-submit-container p {
+    width: 100%;
+    text-align: center;
+    line-height: 25px;
+  }
+  .contact_card .left .form-submit-container img {
+    width: 70px;
+    margin-bottom: 25px;
+  }
+  .contact_card .left .success {
+    color: #009351;
+  }
+  .contact_card .left .error {
+    color: #d22529;
+  }
+  .contact_card .left .form-submit-container a {
+    color: rgb(80, 80, 80);
   }
   .contact_card .left input {
     height: 25px;
@@ -874,6 +922,30 @@
     align-items: center;
     padding: 50px;
     width: 100%;
+  }
+  .contact_card .left .form-submit-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact_card .left .form-submit-container p {
+    width: 80%;
+    text-align: center;
+    line-height: 25px;
+  }
+  .contact_card .left .form-submit-container img {
+    width: 70px;
+    margin-bottom: 25px;
+  }
+  .contact_card .left .success {
+    color: #009351;
+  }
+  .contact_card .left .error {
+    color: #d22529;
+  }
+  .contact_card .left .form-submit-container a {
+    color: rgb(80, 80, 80);
   }
   .contact_card .left input {
     height: 25px;
